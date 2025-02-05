@@ -19,6 +19,16 @@
       "id": "0764",
       "name": "Osamason",
       "email": "LilO@gmail.com"
+    },
+    {
+      "id": "5",
+      "name": "Glock40spazz",
+      "email": "glockspazz@gmail.com"
+    },
+    {
+      "id": "205",
+      "name": "Pooh shiesty",
+      "email": "shiesty@gmail.com"
     }
   ],
   "classes": [
@@ -143,12 +153,6 @@
       "status": "confirmed"
     },
     {
-      "id": "d2a8",
-      "user_id": "5",
-      "fitness_class_id": "11",
-      "status": "confirmed"
-    },
-    {
       "id": "974a",
       "user_id": "10",
       "fitness_class_id": "2",
@@ -183,6 +187,30 @@
       "user_id": "0764",
       "fitness_class_id": "14",
       "status": "confirmed"
+    },
+    {
+      "id": "ee67",
+      "user_id": "5",
+      "fitness_class_id": "9",
+      "status": "confirmed"
+    },
+    {
+      "id": "c340",
+      "user_id": "5",
+      "fitness_class_id": "7",
+      "status": "pending"
+    },
+    {
+      "id": "ecb4",
+      "user_id": "205",
+      "fitness_class_id": "3",
+      "status": "confirmed"
+    },
+    {
+      "id": "b92f",
+      "user_id": "205",
+      "fitness_class_id": "19",
+      "status": "pending"
     }
   ]
 }

@@ -49,11 +49,11 @@
   }
   
   .status-confirmed {
-    color: green;
+    color: rgb(11, 255, 11);
   }
   
   .status-pending {
-    color: orange;
+    color: rgb(255, 230, 8);
   }
   
   .status-cancelled {
@@ -76,7 +76,7 @@
   }
   
   .back-btn {
-    background-color: #4caf50;
+    background-color: #52f507;
     color: white;
     border: none;
     padding: 10px 20px;

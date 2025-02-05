@@ -29,7 +29,7 @@
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-bottom: 3px solid #007bff;
+  border-bottom: 3px solid #00ffd5;
 }
 
 /* Card Content */
@@ -54,7 +54,7 @@
 
 /* Button Styling */
 .fitness-class-card button {
-  background-color: #007bff;
+  background-color: #ff8800;
   color: #fff;
   border: none;
   padding: 12px 20px;
@@ -66,12 +66,12 @@
 }
 
 .fitness-class-card button:hover {
-  background-color: #0056b3;
+  background-color: #2eb30d;
   transform: scale(1.05);
 }
 
 .fitness-class-card button:active {
-  background-color: #004494;
+  background-color: #009494;
 }
 
 .fitness-class-card button:disabled {
