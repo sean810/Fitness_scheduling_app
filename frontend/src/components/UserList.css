@@ -1,0 +1,313 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align at the top */
+  min-height: 100vh;
+}
+
+/* Main Container Styling */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  background-color: rgb(246, 244, 244);
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+/* User List Styling */
+.user-list-container {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.UserList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center the user items */
+  width: 100%;
+}
+
+.user-item {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33% - 20px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.user-item img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.user-item h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.user-item p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.user-item .user-email {
+  font-size: 13px;
+  color: #555;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.user-item .user-email:hover {
+  color: #007bff;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.create-user-link {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.create-user-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .user-item {
+    width: calc(50% - 20px); /* Two columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .user-item {
+    width: 100%; /* Full width on very small screens */
+  }
+}
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* User Bookings Styling */
+.user-bookings {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.booking-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.booking-item {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking-item button {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-item button:hover {
+  background-color: #c82333;
+}
+
+/* User Details Page */
+.user-detail {
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.user-detail h1 {
+  font-size: 26px;
+  color: #333;
+}
+
+.user-detail ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-detail li {
+  background-color: #fafafa;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-detail button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-detail button:hover {
+  background-color: #0056b3;
+}
+
+/* User Form Page */
+.user-form {
+  background-color: white;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.user-form h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.user-form input,
+.user-form select,
+.user-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.user-form button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-form button:hover {
+  background-color: #218838;
+}
+
+/* Fitness Class List */
+.class-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center; /* Center fitness class cards */
+}
+
+.class-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33% - 20px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.class-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.class-card h3 {
+  font-size: 20px;
+  margin: 15px 0;
+  color: #333;
+}
+
+.class-card p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.class-card button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.class-card button:hover {
+  background-color: #218838;
+}
+
+/* Responsive styling for fitness classes */
+@media (max-width: 768px) {
+  .class-card {
+    width: calc(50% - 20px); /* Two columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .class-card {
+    width: 100%; /* Full width on very small screens */
+  }
+}

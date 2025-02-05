@@ -1,0 +1,116 @@
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #f30f0f, #444);
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(255, 15, 15, 0.938);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Logo Styling */
+.navbar-logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-logo:hover {
+  color: #007bff;
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Underline effect on hover */
+.navbar-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #007bff;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+.navbar-links a:hover {
+  color: #007bff;
+}
+
+/* Active link styling */
+.navbar-links a.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.navbar-links a.active::after {
+  width: 100%;
+}
+
+/* Responsive Navbar */
+.navbar-menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+  }
+
+  .navbar-menu-icon {
+      display: block;
+      align-self: flex-end;
+  }
+
+  .navbar-links {
+      display: none;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      background: #333;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 10px;
+  }
+
+  .navbar-links a {
+      padding: 10px;
+      text-align: left;
+  }
+
+  .navbar-links.show {
+      display: flex;
+  }
+}
